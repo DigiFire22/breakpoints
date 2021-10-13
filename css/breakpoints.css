@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 .container{
@@ -24,4 +23,40 @@
     height: 50px;
     width: auto;
     padding: 0.5rem;
+}
+
+.breakpoints h1{
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-color: rgb(96, 192, 160);
+        color: azure;
+    }
+
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1142px) {
+    .breakpoints > div{
+        display: block;
+    }
+
+    .breakpoints > div:not(:last-child){
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 1521px) {
+    .breakpoints > div{
+        display: block;
+    }
+    
+    .container{
+        width: 100%;
+    }
 }
